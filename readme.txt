@@ -9,34 +9,34 @@ License:           Apache License 2.0
 License URI:       https://www.apache.org/licenses/LICENSE-2.0
 Tags:              google, search-console, analytics, adsense, pagespeed-insights
 
-Site Kit is a one-stop solution for WordPress users to use everything Google has to offer to make them successful on the web.
+Site Kitは、WordPressユーザーがGoogleの提供するあらゆるツールを活用し、Web上で成功するためのオールインワンソリューションです。
 
 == Description ==
 
-Site Kit is the official WordPress plugin from Google for insights about how people find and use your site. Site Kit is the one-stop solution to deploy, manage, and get insights from critical Google tools to make the site successful on the web. It provides authoritative, up-to-date insights from multiple Google products directly on the WordPress dashboard for easy access, all for free.
+Site Kitは、サイトの流入や利用状況を把握するための、Google公式WordPressプラグインです。重要なGoogle各種ツールを導入・管理し、そこから得られるインサイトを活用してサイトを成功に導くためのオールインワンソリューションです。複数のGoogle製品からの信頼性の高い最新のインサイトを、WordPressダッシュボード上で手軽に確認でき、すべて無料でご利用いただけます。
 
-= Bringing the best of Google tools to WordPress =
+= GoogleツールのベストプラクティスをWordPressへ =
 
-Site Kit includes powerful features that make using these Google products seamless and flexible:
+Site Kitには、これらのGoogle製品をシームレスかつ柔軟に利用できる強力な機能が備わっています。
 
-* Easy-to-understand stats directly on your WordPress dashboard
-* Official stats from multiple Google tools, all in one dashboard
-* Quick setup for multiple Google tools without having to edit the source code of your site
-* Metrics for your entire site and for individual posts
-* Easy-to-manage, granular permissions across WordPress and different Google products
+* WordPressダッシュボード上でわかりやすい統計情報を直接確認
+* 複数のGoogleツールの公式データを1つのダッシュボードに集約
+* サイトのソースコードを編集することなく、複数のGoogleツールを素早くセットアップ
+* サイト全体および個別投稿ごとの指標を確認可能
+* WordPressと各Google製品にまたがる、管理しやすいきめ細かな権限設定
 
-= Supported Google tools =
+= 対応しているGoogleツール =
 
-Site Kit shows key metrics and insights from different Google products:
+Site Kitは、さまざまなGoogle製品から主要な指標とインサイトを表示します。
 
-* **Search Console:** Understand how Google Search discovers and displays your pages in Google Search. Track how many people saw your site in Search results, and what query they used to search for your site.
-* **Analytics:** Explore how users navigate your site and track goals you've set up for your users to complete.
-* **AdSense:** Keep track of how much your site is earning you.
-* **PageSpeed Insights:** See how your pages perform compared to other real-world sites. Improve performance with actionable tips from PageSpeed Insights.
-* **Tag Manager:** Use Site Kit to easily set up Tag Manager- no code editing required. Then, manage your tags in Tag Manager.
-* **Sign in with Google:** Allows visitors to sign up and log in to your site with their existing Google account.
-* **Reader Revenue Manager:** Helps you grow, retain, and engage your site visitors via subscription, contribution, newsletters, surveys, and custom prompts.
-* **Ads:** Get customers and sell more with targeted traffic from Google Ads.
+* **Search Console：** Google検索があなたのページをどのように発見・表示しているかを把握できます。検索結果に表示された回数や、ユーザーが検索に使用したクエリを追跡できます。
+* **Analytics：** ユーザーがサイト内をどのように移動しているかを確認し、設定した目標の達成状況を追跡できます。
+* **AdSense：** サイトの収益状況を把握できます。
+* **PageSpeed Insights：** 他の実サイトと比較したページのパフォーマンスを確認できます。PageSpeed Insightsからの実践的な改善提案でパフォーマンスを向上させられます。
+* **Tag Manager：** コード編集不要でTag Managerを簡単にセットアップできます。その後はTag Manager上でタグを管理できます。
+* **Googleでログイン：** 訪問者が既存のGoogleアカウントを使ってサイトへの登録・ログインができるようになります。
+* **Reader Revenue Manager：** 定期購読、寄付、ニュースレター、アンケート、カスタムプロンプトなどを通じて、サイト訪問者の獲得・維持・エンゲージメント向上を支援します。
+* **Ads：** ターゲットを絞ったGoogle広告からのトラフィックで顧客を獲得し、売上を伸ばせます。
 
 == Installation ==
 
