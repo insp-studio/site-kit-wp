@@ -22,6 +22,7 @@
 import { combineStores, commonStore } from 'googlesitekit-data';
 import { createErrorStore } from '@/js/googlesitekit/data/create-error-store';
 import { createSnapshotStore } from '@/js/googlesitekit/data/create-snapshot-store';
+import aiInsights from './ai-insights';
 import cache from './cache';
 import connection from './connection';
 import consentMode from './consent-mode';
@@ -42,6 +43,7 @@ import urls from './urls';
 
 const store = combineStores(
 	commonStore,
+	aiInsights,
 	connection,
 	consentMode,
 	conversionTracking,

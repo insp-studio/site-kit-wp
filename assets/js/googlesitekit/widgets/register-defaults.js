@@ -25,6 +25,7 @@ import { __ } from '@wordpress/i18n';
 /**
  * Internal dependencies
  */
+import AIInsightsWidget from '@/js/components/ai-insights/AIInsightsWidget';
 import {
 	ChangeMetricsLink,
 	KeyMetricsBackNotice,
@@ -49,6 +50,7 @@ import {
 } from '@/js/modules/analytics-4/components/audience-segmentation/dashboard';
 import ConnectGA4CTAWidget from '@/js/modules/analytics-4/components/widgets/ConnectGA4CTAWidget';
 import { MODULE_SLUG_ANALYTICS_4 } from '@/js/modules/analytics-4/constants';
+import { MODULE_SLUG_SEARCH_CONSOLE } from '@/js/modules/search-console/constants';
 import { WIDGET_AREA_STYLES } from './datastore/constants';
 import * as WIDGET_AREAS from './default-areas';
 import * as WIDGET_CONTEXTS from './default-contexts';
@@ -502,5 +504,24 @@ export function registerDefaults( widgetsAPI ) {
 			},
 		},
 		[ AREA_MAIN_DASHBOARD_KEY_METRICS_PRIMARY ]
+	);
+
+	widgetsAPI.registerWidget(
+		'aiInsights',
+		{
+			Component: AIInsightsWidget,
+			width: [ widgetsAPI.WIDGET_WIDTHS.FULL ],
+			priority: 5,
+			isActive: ( select ) =>
+				select( CORE_MODULES ).isModuleConnected(
+					MODULE_SLUG_ANALYTICS_4
+				) &&
+				select( CORE_MODULES ).isModuleConnected(
+					MODULE_SLUG_SEARCH_CONSOLE
+				) &&
+				select( CORE_SITE ).isAIInsightsEnabled() === true &&
+				select( CORE_SITE ).hasAIInsightsAPIKey() === true,
+		},
+		[ AREA_MAIN_DASHBOARD_CONTENT_PRIMARY ]
 	);
 }

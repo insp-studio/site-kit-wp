@@ -246,6 +246,7 @@ final class Plugin {
 				( new Core\Prompts\Prompts( $this->context, $user_options ) )->register();
 				( new Core\Consent_Mode\Consent_Mode( $this->context, $modules, $options ) )->register();
 				( new Core\Tags\GTag( $options ) )->register();
+				( new Core\AI_Insights\AI_Insights( $options ) )->register();
 
 				$conversion_tracking = new Core\Conversion_Tracking\Conversion_Tracking( $this->context, $options );
 				$conversion_tracking->register();

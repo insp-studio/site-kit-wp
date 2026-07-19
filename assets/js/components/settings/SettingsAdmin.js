@@ -38,6 +38,7 @@ import { MODULE_SLUG_ANALYTICS_4 } from '@/js/modules/analytics-4/constants';
 import { MODULES_ANALYTICS_4 } from '@/js/modules/analytics-4/datastore/constants';
 import { MODULES_SEARCH_CONSOLE } from '@/js/modules/search-console/datastore/constants';
 import ConnectedIcon from '@/svg/icons/connected.svg';
+import SettingsCardAIInsights from './SettingsCardAIInsights';
 import SettingsCardConsentMode from './SettingsCardConsentMode';
 import SettingsCardEmailReporting from './SettingsCardEmailReporting';
 import SettingsCardKeyMetrics from './SettingsCardKeyMetrics';
@@ -173,6 +174,10 @@ export default function SettingsAdmin() {
 
 			<Cell size={ 12 }>
 				<SettingsCardEmailReporting />
+			</Cell>
+
+			<Cell size={ 12 }>
+				<SettingsCardAIInsights />
 			</Cell>
 
 			<Cell size={ 12 }>
