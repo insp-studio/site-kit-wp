@@ -1,0 +1,22 @@
+name: PR Review
+
+# human-approval ティア用テンプレート(顧客案件・外部組織向け)。
+# コピー先: 各リポジトリの .github/workflows/pr-review.yml
+# 事前準備: リポジトリに Secrets `CLAUDE_CODE_OAUTH_TOKEN` を設定しておくこと。
+# auto-merge は有効化しない。マージは必ず人間がボタンを押す。
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+jobs:
+  review:
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+    uses: yuichiroiwashita-ctrl/gha-shared-workflows/.github/workflows/claude-pr-review.yml@main
+    with:
+      auto_merge: false
+    secrets:
+      claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
