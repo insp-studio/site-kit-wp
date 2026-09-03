@@ -15,7 +15,9 @@ jobs:
       contents: write
       pull-requests: write
       id-token: write
-    uses: yuichiroiwashita-ctrl/gha-shared-workflows/.github/workflows/claude-pr-review.yml@main
+    # SHA固定(main HEAD: ea8ef0305605709c838b54c98833596654da50f7)。
+    # 更新時は README の「reusable workflow の更新」手順に従ってSHAを差し替えること。
+    uses: yuichiroiwashita-ctrl/gha-shared-workflows/.github/workflows/claude-pr-review.yml@ea8ef0305605709c838b54c98833596654da50f7
     with:
       auto_merge: false
     secrets:
